@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/AkashGutha/vsmodule-codeshot/issues"
   },
-  "homepage": "https://github.com/AkashGutha/vsmodule-codeshot#readme"
+  "homepage": "https://github.com/AkashGutha/vsmodule-codeshot#readme",
+  "dependencies": {
+    "flavored-path": "0.0.8"
+  }
 }
