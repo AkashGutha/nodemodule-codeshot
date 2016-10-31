@@ -1,0 +1,24 @@
+{
+  "name": "codeshot",
+  "version": "1.0.0",
+  "description": "node module to capture screenshots, especially while coding.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkashGutha/vsmodule-codeshot.git"
+  },
+  "keywords": [
+    "screenshot",
+    "codeshot",
+    "code"
+  ],
+  "author": "AkashGutha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AkashGutha/vsmodule-codeshot/issues"
+  },
+  "homepage": "https://github.com/AkashGutha/vsmodule-codeshot#readme"
+}
