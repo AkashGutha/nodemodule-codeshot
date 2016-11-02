@@ -26,7 +26,7 @@ codeShot.prototype.capture = function (path, options) {
 
     // spawn the right child process for the right platform
     // process.execPath is the current node binary running this process. 
-    let nativeCapture = childProcess.spawn(process.execPath, [envPath]);
+    let nativeCapture = childProcess.spawn(process.execPath, [envPath, options]);
 
     // handlers for native child process for error logging and console printing. 
 
@@ -37,7 +37,12 @@ codeShot.prototype.capture = function (path, options) {
 
     // when the child process exits
     nativeCapture.on('exit', (data) => {
-        console.log('exited : ' + data);
+        console.log('exited with code ' + data);
     });
 }
 module.exports = codeShot;
+
+
+// test code
+var cs = new codeShot();
+cs.capture('screenshot.png', { name: 'screen.png', width: 100, height: 100, quality: 12 }); 
